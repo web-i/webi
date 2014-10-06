@@ -1,7 +1,7 @@
 webi
 ====
 
-`webi` is an alternate specification of python web applications interface to web servers.
+`webi` is specification of python web applications interface to web servers.
 
 It builds upon WSGI, PEP 444, Rack, PSGI/Plack, ring and other similar specifications.
 
@@ -11,10 +11,7 @@ A `webi` application can be implemented by any python callable, with `environmen
 
 ```python
 def application(environment):
-  status = 200
-  headers = {'Content-Type': 'text/plain'}
-  body = [environment['REQUEST_METHOD']]
-  return status, headers, body
+  return 200, {'Content-Type': 'text/plain'}, [environment['REQUEST_METHOD']]
 ```
 ### environment
 
