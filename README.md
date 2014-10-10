@@ -11,7 +11,7 @@ A `webi` application can be implemented by any python callable, with `environmen
 
 ```python
 def application(environment):
-  return 200, {'Content-Type': 'text/plain'}, [environment['REQUEST_METHOD']]
+  return 200, {'Content-Type': 'text/plain'}, environment['REQUEST_METHOD']
 ```
 ### environment
 
