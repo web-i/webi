@@ -26,4 +26,4 @@ Is one of the http status codes, such as 200, 404, 500, 303 etc.
 Is a dictionary, with keys and values as string, except for multiple header values, where the value is a list of strings. Applications can send webi. prefixed directive headers to web servers, which will not be sent to client.
 
 #### body
-Is an iterable which yields string values.
+Could be string, file, iterable or anything that can be represented by a string.
