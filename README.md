@@ -3,7 +3,7 @@ webi
 
 `webi` is specification of python web applications interface to web servers.
 
-It builds upon WSGI, PEP 444, Rack, PSGI/Plack, ring and other similar specifications.
+It builds upon WSGI, PEP 444, Rack, PSGI/Plack, ring, plug, clack and other similar specifications.
 
 ## Interface
 
@@ -27,3 +27,6 @@ Is a dictionary, with keys and values as string, except for multiple header valu
 
 #### body
 Could be string, file, iterable or anything that can be represented by a string.
+
+### Thanks
+Thank you all, who have worked upon WSGI, PEP 444, Rack, PSGI/Plack, ring, plug and clack.
